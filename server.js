@@ -47,7 +47,7 @@ app.get('/create-data-nilai', function (req, res) {
    
 })
 
-app.get('/save-data-nilai', function (req, res) {
+app.post('/save-data-nilai', urlencodedParser, function (req, res) {
 	response = {
 		nim:req.body.nim,
 		matkul:req.body.matkul,
